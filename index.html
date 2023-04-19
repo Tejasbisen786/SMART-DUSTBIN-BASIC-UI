@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="10" > -->
+  <title>iot</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0px;
+    }
+
+    .bg {
+      background-image: url("/CODE_website/images/pexels-cup-of-couple-6632867.jpg");
+      height: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 25%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    td {
+      border: 1.5px solid #000000;
+      text-align: center;
+      padding: 8px;
+      font-size: 20px;
+
+    }
+
+    th {
+      border: 1.5px solid #000000;
+      text-align: center;
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 28px;
+    }
+    .headtext{
+      
+    }
+    h1{
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: rem;
+   margin: 20px 0px;
+
+   font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 28px;
+letter-spacing: 2px;
+word-spacing: 1.2px;
+color: #000000;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+color:darkcyan
+    }
+    table{
+      position: absolute;
+      top: 50%;
+      left: 35%;
+
+    }
+  </style>
+</head>
+
+<body class="bg">
+  <div class="headtext">
+    <h1> IoT Based Garbage monitoring system </h1>
+  </div>
+<div class="">
+  <table>
+    <thead>
+      <th>BIN Number</th>
+      <th>BIN Status</th>
+    </thead>
+    <tbody id="t1">
+
+    </tbody>
+  </table>
+</div>
+  
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "API_key",
+    authDomain: "your-project.firebaseapp.com",
+    databaseURL: "https://your_project.firebaseio.com",
+    projectId: "your-project_name",
+    storageBucket: "your-project.appspot.com",
+    messagingSenderId: "9257147731"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js">
+
+</script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
